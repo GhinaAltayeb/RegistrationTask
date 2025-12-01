@@ -7,7 +7,7 @@ import Router from './Router'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Task">
+    <BrowserRouter basename="/RegistrationTask">
         <Router/>
     </BrowserRouter>
   </StrictMode>,
