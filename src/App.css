@@ -125,6 +125,7 @@
     @apply border-border outline-ring/50;
 
   }
+
   body {
     @apply bg-background text-foreground;
 
@@ -133,18 +134,25 @@
 }
 
 
-.signup .form-group{
+.signup .form-group {
   @apply flex flex-col gap-1
 }
 
-.signup label{
+.signup label {
   @apply text-[#565074]
 }
 
-.signup .form-group input{
+.signup .form-group input {
   @apply border-2 border-[#E9EAF0] p-2
 }
 
-.signup .eye{
+.signup .eye {
   @apply absolute right-3 top-[60%] cursor-pointer
+}
+
+.main-btn {
+  transition: all 0.2s linear;
+  @apply flex justify-center items-center cursor-pointer gap-3 border
+  bg-[#5647a8] text-white hover:bg-white hover:border-[#5647a8] hover:text-[#5647a8] 
+  py-2 px-3 mt-2 disabled:opacity-50 disabled:cursor-default
 }

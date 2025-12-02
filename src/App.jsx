@@ -48,7 +48,7 @@ function App() {
     <div className="signup min-h-lvh flex flex-col md:flex-row">
 
       {/* photo */}
-      <div className='left  max-md:h-[336px] md:w-1/2 bg-[url(/public/signup.jpg)] bg-contain bg-no-repeat bg-center'>
+      <div loading="lazy" className='left  max-md:h-[336px] md:w-1/2 bg-[url(/signup.jpg)] bg-contain bg-no-repeat bg-center'>
       </div>
 
       {/* form */}
@@ -108,7 +108,7 @@ function App() {
 
             <button
               disabled={passwordMatch}
-              className='flex justify-center items-center cursor-pointer gap-3 bg-[#5647a8] text-white py-2 px-3 mt-2 disabled:opacity-50 disabled:cursor-default'
+              className='main-btn'
             >
               {loading ? 'Creating Account ...' : 'Create Account'}
               <IoArrowForwardOutline />
